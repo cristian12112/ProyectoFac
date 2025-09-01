@@ -19,7 +19,7 @@ namespace ProyectoFac.Models
         [Column(TypeName = "varchar(255)")]
         public string   prg_vch_email       { get; set; }
         [Column(TypeName = "varchar(255)")]
-        public int      prg_int_tipo        { get; set; }
+        public string    prg_int_tipo       { get; set; }
         [DataType(DataType.Date)]
         public DateTime prg_dt_fecharegistro{ get; set; } = DateTime.Now;
 

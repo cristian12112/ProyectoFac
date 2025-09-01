@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using ProyectoFac.Context;
+using ProyectoFac.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<IClientesServices, ClienteServices>();
 
 //BD CONECCTION STRING
 // Add services to the container.
@@ -11,6 +14,9 @@ builder.Services.AddDbContext<StoreContext>(options =>
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
+
+// 
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

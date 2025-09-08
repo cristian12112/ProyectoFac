@@ -1,7 +1,7 @@
 ﻿using ProyectoFac.DTOs;
 using ProyectoFac.DTOs.ClientesDtos;
 
-namespace ProyectoFac.Services
+namespace ProyectoFac.Interface.Cliente
 {
     public interface IClientesServices
     {

@@ -1,10 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using ProyectoFac.Context;
+using ProyectoFac.Interface.Cliente;
+using ProyectoFac.Interface.Factura;
 using ProyectoFac.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IClientesServices, ClienteServices>();
+builder.Services.AddScoped<IFacturaService, FacturaServices>();
 
 //BD CONECCTION STRING
 // Add services to the container.

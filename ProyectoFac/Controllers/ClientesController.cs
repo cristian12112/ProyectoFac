@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProyectoFac.DTOs;
 using ProyectoFac.DTOs.ClientesDtos;
-using ProyectoFac.Services;
+using ProyectoFac.Interface.Cliente;
 
 namespace ProyectoFac.Controllers
 {

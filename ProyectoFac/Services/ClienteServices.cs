@@ -2,6 +2,7 @@
 using ProyectoFac.Context;
 using ProyectoFac.DTOs;
 using ProyectoFac.DTOs.ClientesDtos;
+using ProyectoFac.Interface.Cliente;
 using ProyectoFac.Models;
 
 namespace ProyectoFac.Services

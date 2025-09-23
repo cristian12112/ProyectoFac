@@ -6,8 +6,8 @@ namespace ProyectoFac.Interface.Pago
     public interface IPago
     {
         Task<IEnumerable<PagoDtos>> ListarPagos();
-        Task<PagoDtos> AddPAgo();
+        Task<PagoDtos> AddPago(PagoAddDtos add);
         Task<PagoDtos> UpdatePagos(PagoUpdateDtos updatePago, int idpago);
-        Task<PagoDtos> DeletePagos(PagoDeleteDtos deletePago, int idpago);
+        Task<PagoDtos> DeletePagos(int idpago);
     }
 }

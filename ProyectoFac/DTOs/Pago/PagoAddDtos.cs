@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFac.DTOs.Pago
 {
-    public class PagoDeleteDtos
+    public class PagoAddDtos
     {
         public int prg_int_idcontrato { get; set; }
 

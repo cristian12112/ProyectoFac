@@ -2,12 +2,16 @@ using Microsoft.EntityFrameworkCore;
 using ProyectoFac.Context;
 using ProyectoFac.Interface.Cliente;
 using ProyectoFac.Interface.Factura;
+using ProyectoFac.Interface.Pago;
 using ProyectoFac.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+// Add services to the container.
 builder.Services.AddScoped<IClientesServices, ClienteServices>();
 builder.Services.AddScoped<IFacturaService, FacturaServices>();
+builder.Services.AddScoped<IPago, PagoServices>();
 
 //BD CONECCTION STRING
 // Add services to the container.
@@ -17,8 +21,6 @@ builder.Services.AddDbContext<StoreContext>(options =>
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
-
-// 
 
 
 builder.Services.AddControllers();

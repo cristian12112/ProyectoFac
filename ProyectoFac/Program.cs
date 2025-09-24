@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ProyectoFac.Context;
+using ProyectoFac.Interface;
 using ProyectoFac.Interface.Cliente;
 using ProyectoFac.Interface.Factura;
 using ProyectoFac.Interface.Garantia;
@@ -16,6 +17,7 @@ builder.Services.AddScoped<IFacturaService, FacturaServices>();
 builder.Services.AddScoped<IPago, PagoServices>();
 builder.Services.AddScoped<IGarantias, GarantiaServices>();
 builder.Services.AddScoped<IMovimiento, MovimientoServices>();
+builder.Services.AddScoped<IContratoFactoring, ContratoFactoringServices>();
 
 //BD CONECCTION STRING
 // Add services to the container.

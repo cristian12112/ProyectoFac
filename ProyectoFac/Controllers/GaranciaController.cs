@@ -12,11 +12,11 @@ namespace ProyectoFac.Controllers
     [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
-    public class Pagos : ControllerBase
+    public class GaranciaController : ControllerBase
     {
         private IGarantias _garantias;
 
-        public Pagos(IGarantias garantias)
+        public GaranciaController(IGarantias garantias)
         {
             _garantias = garantias;
         }

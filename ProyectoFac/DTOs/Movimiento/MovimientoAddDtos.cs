@@ -1,0 +1,22 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ProyectoFac.DTOs.Movimiento
+{
+    public class MovimientoAddDtos
+    {
+        public int Idmovimiento { get; set; }
+
+        public int Idusuario { get; set; }
+
+        public int? Idfactura { get; set; }
+
+        public int? Idcontrato { get; set; }
+
+        public string Accion { get; set; }
+
+        public string Descripcion { get; set; }
+
+        public DateTime Fecha { get; set; } = DateTime.Now;
+    }
+}

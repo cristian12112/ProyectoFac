@@ -76,7 +76,7 @@ namespace ProyectoFac.Services
                     Fecha = req.prg_dt_fecha
                 };
 
-                _context.Remove(delete);
+                _context.Remove(req);
                 await _context.SaveChangesAsync();
                 return delete;
             }

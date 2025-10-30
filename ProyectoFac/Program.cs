@@ -18,6 +18,7 @@ builder.Services.AddScoped<IPago, PagoServices>();
 builder.Services.AddScoped<IGarantias, GarantiaServices>();
 builder.Services.AddScoped<IMovimiento, MovimientoServices>();
 builder.Services.AddScoped<IContratoFactoring, ContratoFactoringServices>();
+builder.Services.AddScoped<IEntidadFinanciera, EntiedadFinancieraServices>();
 
 //BD CONECCTION STRING
 // Add services to the container.
